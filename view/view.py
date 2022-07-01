@@ -2,13 +2,14 @@ import tkinter
 from tkinter.constants import *
 from tkinter import StringVar, IntVar
 from tkinter.ttk import *
+from PIL import ImageTk
 
 
 class View(tkinter.Tk):
 
     def __init__(self, controller):
         super().__init__()
-        self.geometry("400x400")
+        self.geometry("340x280")
         self.title("Current Weather")
 
         self.controller = controller
@@ -23,9 +24,16 @@ class View(tkinter.Tk):
         self.varWindSpeed = StringVar()
         self.varWindDir = StringVar()
         self.varUnits = IntVar()
+        self.varWeatherIcon = StringVar()
 
-        self.varTemp.set("104")
-        self.varLocation.set("The desert")
+        #self.displayIcon = ImageTk.PhotoImage(requests.get("http://" + str(self.varWeatherIcon)))
+
+
+        self.varTemp.set(" ")
+        self.varLocation.set(" ")
+
+
+
 
         #---- Frames ----
         self.mainframe = Frame(self)
@@ -54,7 +62,7 @@ class View(tkinter.Tk):
 
         labelTemp = Label(self.frameInfo, textvariable=self.varTemp)
         labelLocation = Label(self.frameInfo, textvariable=self.varLocation)
-        labelIcon = Label(self.frameInfo, text='image')
+        labelIcon = Label(self.frameInfo, textvariable=self.varWeatherIcon)
 
         labelTemp.pack(pady=5)
         labelLocation.pack(pady=5)

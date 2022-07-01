@@ -1,4 +1,3 @@
-from model.mapbox import MapBox
 from view.view import View
 from model.weather import Weather
 from model.mapbox import MapBox
@@ -23,6 +22,7 @@ class Controller:
             self.view.varCondition.set(self.weather.getConditionText())
             self.view.varWindSpeed.set(self.weather.getWindSpeedMPH())
             self.view.varWindDir.set(self.weather.getWindDirection())
+            self.view.varWeatherIcon.set(self.weather.getWeatherIcon())
 
             if self.view.varUnits.get() == 1:
                 self.view.varTemp.set(self.weather.getCurrentTempF())
