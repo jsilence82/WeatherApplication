@@ -1,5 +1,5 @@
-
 import requests
+
 
 API_KEY = 'b8958f8bf2f842faaa0160017222806'
 
@@ -78,11 +78,9 @@ class Weather:
     def getFeelsLikeC(self):
         return self.getCurrentData('feelslike_c')+'\u00B0C'
 
-
     def getWeatherIcon(self):
         icon_code = self.getCurrentData('condition')
         return str(icon_code['icon'])
-
 
     #---- fetch ----
 
