@@ -1,7 +1,10 @@
+import io
 import tkinter
+import urllib.request
 from tkinter.constants import *
 from tkinter import StringVar, IntVar
 from tkinter.ttk import *
+from PIL import ImageTk
 
 
 
@@ -26,6 +29,7 @@ class View(tkinter.Tk):
         self.varUnits = IntVar()
 
         self.varWeatherIcon = StringVar()
+
 
         #self.displayIcon = ImageTk.PhotoImage(requests.get("http://" + str(self.varWeatherIcon)))
 
@@ -60,7 +64,7 @@ class View(tkinter.Tk):
 
         labelTemp = Label(self.frameInfo, textvariable=self.varTemp)
         labelLocation = Label(self.frameInfo, textvariable=self.varLocation)
-        labelIcon = Label(self.frameInfo, textvariable=self.varWeatherIcon)
+        labelIcon = Label(self.frameInfo, textvariable=self.varWeatherIcon) # changed to display url until icon issue is fixed
 
         labelTemp.pack(pady=5)
         labelLocation.pack(pady=5)
