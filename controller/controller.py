@@ -1,4 +1,3 @@
-from model.mapbox import MapBox
 from view.view import View
 from model.weather import Weather
 from model.mapbox import MapBox
