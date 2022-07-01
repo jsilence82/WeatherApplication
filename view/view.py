@@ -4,6 +4,7 @@ from tkinter import StringVar, IntVar
 from tkinter.ttk import *
 
 
+
 class View(tkinter.Tk):
 
     def __init__(self, controller):
