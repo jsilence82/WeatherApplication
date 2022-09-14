@@ -3,83 +3,64 @@ import requests
 
 API_KEY = 'b8958f8bf2f842faaa0160017222806'
 
+
 class Weather:
 
-    def __init__(self, location:str='92602'):
+    def __init__(self, location: str = 'Heidelberg'):
         self.weatherData = {}
         self.fetch(location)
 
-    #---- Location ----
-
-    def getLocationData(self, name):
+    def get_location_data(self, name):
         data = self.weatherData['location'][name]
         return str(data)
 
+    def get_city(self):
+        return self.get_location_data('name')
 
-    def getCity(self):
-        return self.getLocationData('name')
+    def get_state(self):
+        return self.get_location_data('region')
 
+    def get_country(self):
+        return self.get_location_data('country')
 
-    def getState(self):
-        return self.getLocationData('region')
+    def get_time_zone(self):
+        return self.get_location_data('tz_id')
 
-
-    def getCountry(self):
-        return self.getLocationData('country')
-
-
-    def getTimeZone(self):
-        return self.getLocationData('tz_id')
-
-
-    def getLocation(self):
-        if 'America' in self.getTimeZone():
-            return f'{self.getCity()}, {self.getState()}'
+    def get_location(self):
+        if 'America' in self.get_time_zone():
+            return f'{self.get_city()}, {self.get_state()}'
         else:
-            return f'{self.getCity()}, {self.getCountry()}'
+            return f'{self.get_city()}, {self.get_country()}'
 
-
-    #---- Current
-
-    def getCurrentData(self, name):
+    def get_current_data(self, name):
         data = self.weatherData['current'][name]
         return data if name == 'condition' else str(data)
 
+    def get_current_temp_f(self):
+        return self.get_current_data('temp_f') + '\u00B0F'
 
-    def getCurrentTempF(self):
-        return self.getCurrentData('temp_f')+'\u00B0F'
+    def get_current_temp_c(self):
+        return self.get_current_data('temp_c') + '\u00B0C'
 
-
-    def getCurrentTempC(self):
-        return self.getCurrentData('temp_c')+'\u00B0C'
-
-
-    def getConditionText(self):
-        condition = self.getCurrentData('condition')
+    def get_condition_text(self):
+        condition = self.get_current_data('condition')
         return str(condition['text'])
 
+    def get_condition_icon(self):
+        icon = self.get_current_data('weather')
+        return icon['icon']
 
-    def getConditionIcon(self):
-        pass
+    def get_wind_speed_mph(self):
+        return self.get_current_data('wind_mph') + ' mph'
 
+    def get_wind_direction(self):
+        return self.get_current_data('wind_dir')
 
-    def getWindSpeedMPH(self):
-        return self.getCurrentData('wind_mph')+' mph'
+    def get_feels_like_f(self):
+        return self.get_current_data('feelslike_f') + '\u00B0F'
 
-
-    def getWindDirection(self):
-        return self.getCurrentData('wind_dir')
-
-
-    def getFeelsLikeF(self):
-        return self.getCurrentData('feelslike_f')+'\u00B0F'
-
-
-    def getFeelsLikeC(self):
-        return self.getCurrentData('feelslike_c')+'\u00B0C'
-
-
-    #---- fetch ----
+    def get_feels_like_c(self):
+        return self.get_current_data('feelslike_c') + '\u00B0C'
 
     def fetch(self, query):
         try:

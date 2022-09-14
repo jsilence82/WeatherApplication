@@ -4,18 +4,21 @@ from tkinter import StringVar, IntVar
 from tkinter.ttk import *
 
 
-
 class View(tkinter.Tk):
 
     def __init__(self, controller):
         super().__init__()
+        self.frameControls = None
+        self.frameDetails = None
+        self.frameInfo = None
+        self.comboSearch = None
+        self.frameSearchBar = None
         self.geometry("400x400")
         self.title("Current Weather")
 
         self.controller = controller
-        self.bind('<Return>', self.controller.handleButtonSearch)
+        self.bind('<Return>', self.controller.handle_button_search)
 
-        #---- Variables ----
         self.varSearch = StringVar()
         self.varTemp = StringVar()
         self.varLocation = StringVar()
@@ -28,77 +31,73 @@ class View(tkinter.Tk):
         self.varTemp.set("104")
         self.varLocation.set("The desert")
 
-        #---- Frames ----
         self.mainframe = Frame(self)
         self.mainframe.pack()
-        self._createFrameSearchBar()
-        self._createFrameInfo()
-        self._createFrameDetails()
-        self._createFrameControls()
+        self.create_frame_search_bar()
+        self.create_frame_info()
+        self.create_frame_details()
+        self.create_frame_controls()
 
-
-    def _createFrameSearchBar(self):
+    def create_frame_search_bar(self):
         self.frameSearchBar = Frame(self.mainframe)
 
         self.comboSearch = Combobox(self.frameSearchBar, textvariable=self.varSearch)
-        buttonSearch = Button(self.frameSearchBar, text="Search", command=self.controller.handleButtonSearch)
+        button_search = Button(self.frameSearchBar, text="Search", command=self.controller.handle_button_search)
 
-        self.comboSearch.bind('<KeyRelease>', self.controller.handleComboSearch)
+        self.comboSearch.bind('<KeyRelease>', self.controller.handle_combo_search)
 
         self.comboSearch.pack(padx=10, side=LEFT)
-        buttonSearch.pack(side=RIGHT)
+        button_search.pack(side=RIGHT)
         self.frameSearchBar.pack()
 
-
-    def _createFrameInfo(self):
+    def create_frame_info(self):
         self.frameInfo = Frame(self.mainframe)
 
-        labelTemp = Label(self.frameInfo, textvariable=self.varTemp)
-        labelLocation = Label(self.frameInfo, textvariable=self.varLocation)
-        labelIcon = Label(self.frameInfo, text='image')
+        label_temp = Label(self.frameInfo, textvariable=self.varTemp)
+        label_location = Label(self.frameInfo, textvariable=self.varLocation)
+        label_icon = Label(self.frameInfo, text='image')
 
-        labelTemp.pack(pady=5)
-        labelLocation.pack(pady=5)
-        labelIcon.pack(pady=5)
+        label_temp.pack(pady=5)
+        label_location.pack(pady=5)
+        label_icon.pack(pady=5)
         self.frameInfo.pack()
 
-
-    def _createFrameDetails(self):
+    def create_frame_details(self):
         self.frameDetails = Frame(self.mainframe)
 
-        labelConditionLeft = Label(self.frameDetails, text='Current Condition:')
-        labelFeelsLikeLeft = Label(self.frameDetails, text='Feels Like:')
-        labelWindSpeedLeft = Label(self.frameDetails, text='Wind Speed:')
-        labelWindDirLeft = Label(self.frameDetails, text='Wind Direction:')
+        label_condition_left = Label(self.frameDetails, text='Current Condition:')
+        label_feels_like_left = Label(self.frameDetails, text='Feels Like:')
+        label_wind_speed_left = Label(self.frameDetails, text='Wind Speed:')
+        label_wind_dir_left = Label(self.frameDetails, text='Wind Direction:')
 
-        labelConditionRight = Label(self.frameDetails, textvariable=self.varCondition)
-        labelFeelsLikeRight = Label(self.frameDetails, textvariable=self.varFeelsLike)
-        labelWindSpeedRight = Label(self.frameDetails, textvariable=self.varWindSpeed)
-        labelWindDirRight = Label(self.frameDetails, textvariable=self.varWindDir)
+        label_condition_right = Label(self.frameDetails, textvariable=self.varCondition)
+        label_feels_like_right = Label(self.frameDetails, textvariable=self.varFeelsLike)
+        label_wind_speed_right = Label(self.frameDetails, textvariable=self.varWindSpeed)
+        label_wind_dir_right = Label(self.frameDetails, textvariable=self.varWindDir)
 
-        labelConditionLeft.grid(row=0, column=0, pady=5, sticky=W)
-        labelConditionRight.grid(row=0, column=1, pady=5, sticky=E)
-        labelFeelsLikeLeft.grid(row=1, column=0, pady=5, sticky=W)
-        labelFeelsLikeRight.grid(row=1, column=1, pady=5, sticky=E)
-        labelWindSpeedLeft.grid(row=2, column=0, pady=5, sticky=W)
-        labelWindSpeedRight.grid(row=2, column=1, pady=5, sticky=E)
-        labelWindDirLeft.grid(row=3, column=0, pady=5, sticky=W)
-        labelWindDirRight.grid(row=3, column=1, pady=5, sticky=E)
+        label_condition_left.grid(row=0, column=0, pady=5, sticky=W)
+        label_condition_right.grid(row=0, column=1, pady=5, sticky=E)
+        label_feels_like_left.grid(row=1, column=0, pady=5, sticky=W)
+        label_feels_like_right.grid(row=1, column=1, pady=5, sticky=E)
+        label_wind_speed_left.grid(row=2, column=0, pady=5, sticky=W)
+        label_wind_speed_right.grid(row=2, column=1, pady=5, sticky=E)
+        label_wind_dir_left.grid(row=3, column=0, pady=5, sticky=W)
+        label_wind_dir_right.grid(row=3, column=1, pady=5, sticky=E)
         self.frameDetails.pack()
 
-
-    def _createFrameControls(self):
+    def create_frame_controls(self):
         self.frameControls = Frame(self.mainframe)
 
-        radioF = Radiobutton(self.frameControls, text='Fahrenheit', variable=self.varUnits, value=1, command=self.controller.updateGUI)
-        radioC = Radiobutton(self.frameControls, text='Celcius', variable=self.varUnits, value=2, command=self.controller.updateGUI)
+        radio_f = Radiobutton(self.frameControls, text='Fahrenheit', variable=self.varUnits, value=1,
+                              command=self.controller.update_gui)
+        radio_c = Radiobutton(self.frameControls, text='Celsius', variable=self.varUnits, value=2,
+                              command=self.controller.update_gui)
 
-        radioF.invoke()
+        radio_c.invoke()
 
-        radioF.pack(side=LEFT, padx=7.5, pady=5)
-        radioC.pack(side=RIGHT, padx=7.5, pady=5)
+        radio_f.pack(side=LEFT, padx=7.5, pady=5)
+        radio_c.pack(side=RIGHT, padx=7.5, pady=5)
         self.frameControls.pack()
-
 
     def main(self):
         self.mainloop()
