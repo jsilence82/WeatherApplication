@@ -1,19 +1,24 @@
+import os.path
 import tkinter
+from tkinter import *
 from tkinter.constants import *
 from tkinter import StringVar, IntVar
 from tkinter.ttk import *
+from PIL import Image, ImageTk
 
 
 class View(tkinter.Tk):
 
     def __init__(self, controller):
         super().__init__()
+        self.label_icon = None
+        self.weather = None
         self.frameControls = None
         self.frameDetails = None
         self.frameInfo = None
         self.comboSearch = None
         self.frameSearchBar = None
-        self.geometry("400x400")
+        self.geometry("380x380")
         self.title("Current Weather")
 
         self.controller = controller
@@ -27,9 +32,18 @@ class View(tkinter.Tk):
         self.varWindSpeed = StringVar()
         self.varWindDir = StringVar()
         self.varUnits = IntVar()
+        self.varIcon = StringVar()
 
-        self.varTemp.set("104")
-        self.varLocation.set("The desert")
+        # Icon has to be initially set before Controller can update with the real time weather.
+        self.varIcon.set("../weather_icons/64x64/day/143.png")
+        script_dir = os.path.dirname(__file__)
+        rel_path = self.varIcon.get()
+        abs_file_path = os.path.join(script_dir, rel_path)
+        weather_icon = Image.open(abs_file_path)
+        self.icon_image = ImageTk.PhotoImage(weather_icon)
+
+        self.varTemp.set("")
+        self.varLocation.set("")
 
         self.mainframe = Frame(self)
         self.mainframe.pack()
@@ -55,11 +69,12 @@ class View(tkinter.Tk):
 
         label_temp = Label(self.frameInfo, textvariable=self.varTemp)
         label_location = Label(self.frameInfo, textvariable=self.varLocation)
-        label_icon = Label(self.frameInfo, text='image')
+
+        self.label_icon = Label(self.frameInfo, image=self.icon_image)
 
         label_temp.pack(pady=5)
         label_location.pack(pady=5)
-        label_icon.pack(pady=5)
+        self.label_icon.pack(pady=5)
         self.frameInfo.pack()
 
     def create_frame_details(self):

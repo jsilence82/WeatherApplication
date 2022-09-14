@@ -47,8 +47,10 @@ class Weather:
         return str(condition['text'])
 
     def get_condition_icon(self):
-        icon = self.get_current_data('weather')
-        return icon['icon']
+        web_icon = self.get_current_data('condition')
+        icon = web_icon['icon']
+        trimmed_icon = icon.replace("//cdn.weatherapi.com/weather", "../weather_icons/")
+        return trimmed_icon
 
     def get_wind_speed_mph(self):
         return self.get_current_data('wind_mph') + ' mph'
