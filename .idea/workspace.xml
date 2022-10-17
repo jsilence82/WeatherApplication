@@ -1,108 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fa2b008-1b70-4332-9098-7b8f6d05af6f" name="Changes" comment="Update variables. Icon still not displaying properly">
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/113.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/116.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/119.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/122.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/143.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/182.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/185.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/227.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/230.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/248.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/260.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/263.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/266.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/281.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/284.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/293.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/296.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/299.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/302.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/305.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/308.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/311.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/314.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/317.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/320.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/323.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/326.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/329.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/332.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/350.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/353.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/356.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/359.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/362.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/365.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/368.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/371.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/374.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/377.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/386.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/389.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/392.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/day/395.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/113.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/116.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/119.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/122.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/143.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/176.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/179.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/182.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/185.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/227.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/230.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/248.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/260.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/263.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/266.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/281.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/284.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/293.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/296.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/299.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/302.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/305.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/308.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/311.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/314.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/317.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/320.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/323.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/326.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/329.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/332.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/350.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/353.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/356.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/359.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/362.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/365.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/368.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/371.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/374.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/377.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/386.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/389.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/392.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/395.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_icons/64x64/night/Thumbs.db" afterDir="false" />
+    <list default="true" id="0fa2b008-1b70-4332-9098-7b8f6d05af6f" name="Changes" comment="Fixed display of real time weather icons. Added icon library from weatherapi.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/mapbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mapbox.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,16 +38,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Student/IdeaProjects/WeatherApplication/controller",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/IdeaProjects/WeatherApplication/controller&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student\IdeaProjects\WeatherApplication\controller" />
@@ -215,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663140161779</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed display of real time weather icons. Added icon library from weatherapi.">
+      <created>1663164435907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663164435908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +143,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Adding weather icon. Icon not displaying properly" />
     <MESSAGE value="Update variables. Icon still not displaying properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update variables. Icon still not displaying properly" />
+    <MESSAGE value="Fixed display of real time weather icons. Added icon library from weatherapi." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed display of real time weather icons. Added icon library from weatherapi." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -245,5 +156,9 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -46,7 +46,8 @@ class Controller:
             self.weather = Weather(location)
             self.update_gui()
 
-    def handle_combo_search(self):
+    def handle_combo_search(self, location):
+        # Parameter location is not used, but fixes search error 1 argument expected but 2 given error
         location = self.view.varSearch.get()
         if len(location) > 3:
             self.mapbox.update_query(location)

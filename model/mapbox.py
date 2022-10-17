@@ -1,11 +1,11 @@
 import requests
 
-api_key = "pk.eyJ1IjoianNpbGVuY2U4MiIsImEiOiJjbDR5Y2t6bWsxb21vM2JtemRkNjdvY3g1In0.XxU_j_M6oVJi7TTINiGW2w"
+api_key = "pk.eyJ1IjoianNpbGVuY2U4MiIsImEiOiJjbDR5Y2hyMjcwOHhuM2N1bGI5Z3Z2djFlIn0.KoW2-uCa5FcaMOKxN7ZYEA"
 
 
 class MapBox:
 
-    def __init__(self, query='Heidelberg', limit=5):
+    def __init__(self, query='Heidelberg', limit=3):
         self.query = query
         self.limit = limit
         self.searchData = {}
