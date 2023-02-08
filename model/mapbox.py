@@ -15,12 +15,15 @@ class MapBox:
     def get_names(self) -> list:
         names = []
         for location in self.searchData:
-            place_name = location['place_name'].split(', ')
-            if 'United States' in place_name:
-                names.append(f'{place_name[0]}, {place_name[1]}')
-            else:
-                names.append(f'{place_name[0]}, {place_name[2]}')
+            try:
 
+                place_name = location['place_name'].split(', ')
+                if 'United States' in place_name:
+                    names.append(f'{place_name[0]}, {place_name[1]}')
+                else:
+                    names.append(f'{place_name[0]}, {place_name[2]}')
+            except IndexError:
+                pass
         return names
 
     def update_query(self, query):
@@ -33,5 +36,5 @@ class MapBox:
               f'&limit={self.limit}&types=place'
         try:
             self.searchData = requests.get(url).json()['features']
-        except:
+        except requests.ConnectionError:
             print(f'MapBox exception: {url}')

@@ -44,7 +44,7 @@ class Weather:
 
     def get_condition_text(self):
         condition = self.get_current_data('condition')
-        return str(condition['text'])
+        return condition['text']
 
     def get_condition_icon(self):
         web_icon = self.get_current_data('condition')
@@ -69,5 +69,5 @@ class Weather:
             url = f'http://api.weatherapi.com/v1/current.json' + \
                   f'?key={API_KEY}&q={query}&aqi=no'
             self.weatherData = requests.get(url).json()
-        except:
+        except requests.ConnectionError:
             self.weatherData = {'error': []}

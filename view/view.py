@@ -7,12 +7,13 @@ from tkinter.ttk import *
 from PIL import Image, ImageTk
 
 
+
 class View(tkinter.Tk):
 
-    def __init__(self, controller):
+    def __init__(self, controller, weather):
         super().__init__()
         self.label_icon = None
-        self.weather = None
+        self.weather = weather
         self.frameControls = None
         self.frameDetails = None
         self.frameInfo = None

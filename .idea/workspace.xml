@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fa2b008-1b70-4332-9098-7b8f6d05af6f" name="Changes" comment="Fixed display of real time weather icons. Added icon library from weatherapi.">
+    <list default="true" id="0fa2b008-1b70-4332-9098-7b8f6d05af6f" name="Changes" comment="Fixed mapbox name search error.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherApplication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApplication.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/mapbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mapbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/weather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +49,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/IdeaProjects/WeatherApplication/controller&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/IdeaProjects/WeatherApplication&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -125,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663164435908</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed mapbox name search error.">
+      <created>1665991200204</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665991200204</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,7 +158,8 @@
     <MESSAGE value="Adding weather icon. Icon not displaying properly" />
     <MESSAGE value="Update variables. Icon still not displaying properly" />
     <MESSAGE value="Fixed display of real time weather icons. Added icon library from weatherapi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed display of real time weather icons. Added icon library from weatherapi." />
+    <MESSAGE value="Fixed mapbox name search error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed mapbox name search error." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
